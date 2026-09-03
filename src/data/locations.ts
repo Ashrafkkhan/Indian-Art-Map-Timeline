@@ -1,0 +1,591 @@
+export const locations = [
+  {
+    id: "bhimbetka",
+    name: "Bhimbetka Rock Shelters",
+    state: "Madhya Pradesh",
+    coordinates: [22.9377, 77.6139],
+    period: "10,000 BCE – 1,000 BCE",
+    category: "Prehistoric",
+    movement: "Prehistoric Rock Art",
+    description: "The Bhimbetka rock shelters exhibit the earliest traces of human life in India. The cave paintings show themes such as animals, early evidence of dance and hunting.",
+    historicalContext: "These shelters were inhabited by Homo erectus and later Homo sapiens. The paintings give us a rare glimpse into the evolution of cognitive capacity and artistic expression in prehistoric humans on the Indian subcontinent.",
+    artisticCharacteristics: [
+      "Use of natural red and white pigments",
+      "Stick-like human figures",
+      "Depictions of communal hunting and dancing",
+      "Silhouettes of animals like bison, tiger, and rhinoceros"
+    ],
+    artists: ["Unknown early humans"],
+    artworks: ["Zoo Rock painting", "Boar Rock"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Bhimbetka_cave_paintings_03.jpg/800px-Bhimbetka_cave_paintings_03.jpg"],
+    relatedLocations: ["ajanta", "sanchi"]
+  },
+  {
+    id: "ajanta",
+    name: "Ajanta Caves",
+    state: "Maharashtra",
+    coordinates: [20.5519, 75.7033],
+    period: "2nd century BCE – 6th century CE",
+    category: "Ancient",
+    movement: "Buddhist Art",
+    description: "A series of rock-cut Buddhist cave monuments that feature some of the finest surviving examples of ancient Indian art, particularly expressive paintings presenting emotion through gesture, pose, and form.",
+    historicalContext: "Carved in two phases, first under the Satavahana dynasty and later under the Vakataka dynasty, these caves served as monasteries and worship halls for Buddhist monks.",
+    artisticCharacteristics: [
+      "Narrative murals from Jataka tales",
+      "Fresco-secco technique",
+      "Expressive human figures with naturalistic features",
+      "Elaborate headdresses and ornamentation",
+      "Use of lapis lazuli and ochre"
+    ],
+    artists: ["Unknown Buddhist monks and artisans"],
+    artworks: ["Padmapani Bodhisattva", "Vajrapani", "Dying Princess"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ajanta_Padmapani.jpg/800px-Ajanta_Padmapani.jpg"],
+    relatedLocations: ["ellora", "sanchi", "amaravati"]
+  },
+  {
+    id: "ellora",
+    name: "Ellora Caves",
+    state: "Maharashtra",
+    coordinates: [20.0264, 75.1771],
+    period: "600 CE – 1000 CE",
+    category: "Ancient",
+    movement: "Rock-cut Architecture",
+    description: "One of the largest rock-cut monastery-temple cave complexes in the world, featuring Hindu, Buddhist, and Jain monuments, illustrating the spirit of tolerance characteristic of ancient India.",
+    historicalContext: "Built during the Rashtrakuta and Yadava dynasties, Ellora represents the pinnacle of Indian rock-cut architecture.",
+    artisticCharacteristics: [
+      "Monolithic rock excavation (Kailasanatha Temple)",
+      "Multi-religious iconography",
+      "Dynamic and monumental sculpture",
+      "Integration of architecture and sculpture"
+    ],
+    artists: ["Rashtrakuta and Yadava artisans"],
+    artworks: ["Kailasanatha Temple", "Ravana shaking Mount Kailash"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Ellora_cave16_001.jpg/800px-Ellora_cave16_001.jpg"],
+    relatedLocations: ["ajanta", "mahabalipuram"]
+  },
+  {
+    id: "sanchi",
+    name: "Sanchi Stupa",
+    state: "Madhya Pradesh",
+    coordinates: [23.4871, 77.7397],
+    period: "3rd century BCE – 12th century CE",
+    category: "Ancient",
+    movement: "Buddhist Art",
+    description: "The Great Stupa at Sanchi is one of the oldest stone structures in India, commissioned by Emperor Ashoka. It is renowned for its intricately carved gateways (toranas).",
+    historicalContext: "A major center of Buddhism in India, serving as a focal point for the spread of Buddhist ideology and art during the Mauryan and subsequent periods.",
+    artisticCharacteristics: [
+      "Aniconic representation of Buddha",
+      "Intricate relief sculptures on toranas",
+      "Depiction of Jataka tales",
+      "Integration of nature and yakshis (tree spirits)"
+    ],
+    artists: ["Mauryan and Satavahana artisans"],
+    artworks: ["The Great Stupa", "North Gateway", "Yakshi bracket figures"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Sanchi_Stupa_from_East.jpg/800px-Sanchi_Stupa_from_East.jpg"],
+    relatedLocations: ["ajanta", "amaravati"]
+  },
+  {
+    id: "amaravati",
+    name: "Amaravati",
+    state: "Andhra Pradesh",
+    coordinates: [16.5746, 80.3575],
+    period: "2nd century BCE – 3rd century CE",
+    category: "Ancient",
+    movement: "Amaravati School of Art",
+    description: "Once the site of a magnificent Buddhist stupa, the Amaravati school is characterized by its dynamic, narrative limestone sculptures that represent a distinct southern style of Buddhist art.",
+    historicalContext: "Flourished under the Satavahana and Ikshvaku dynasties, serving as a major hub connecting Indian art with Southeast Asia.",
+    artisticCharacteristics: [
+      "White limestone sculptures",
+      "Crowded, deeply carved narrative scenes",
+      "Slender, elegant human figures in dynamic poses",
+      "Transition from aniconic to iconic Buddha figures"
+    ],
+    artists: ["Satavahana artisans"],
+    artworks: ["Amaravati Marbles (now scattered in museums)", "Relief of the Great Departure"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Amaravati_Stupa_relief.jpg/800px-Amaravati_Stupa_relief.jpg"],
+    relatedLocations: ["sanchi", "ajanta"]
+  },
+  {
+    id: "khajuraho",
+    name: "Khajuraho",
+    state: "Madhya Pradesh",
+    coordinates: [24.8318, 79.9199],
+    period: "950 CE – 1050 CE",
+    category: "Classical",
+    movement: "Nagara Temple Architecture",
+    description: "A group of Hindu and Jain temples famous for their nagara-style architectural symbolism and their erotic sculptures.",
+    historicalContext: "Built by the Chandela dynasty, these temples celebrate the various aspects of life, including dharma, kama, artha, and moksha, reflecting the liberal culture of the time.",
+    artisticCharacteristics: [
+      "Nagara style with shikhara (spires)",
+      "Intricate exterior and interior carvings",
+      "Sensuous and idealized human forms",
+      "Depiction of daily life, musicians, and dancers"
+    ],
+    artists: ["Chandela dynasty sculptors"],
+    artworks: ["Kandariya Mahadeva Temple", "Lakshmana Temple"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Khajuraho_Kandariya_Mahadeo_Temple.jpg/800px-Khajuraho_Kandariya_Mahadeo_Temple.jpg"],
+    relatedLocations: ["konark", "bhubaneswar"]
+  },
+  {
+    id: "mahabalipuram",
+    name: "Mahabalipuram",
+    state: "Tamil Nadu",
+    coordinates: [12.6208, 80.1945],
+    period: "7th – 8th century CE",
+    category: "Classical",
+    movement: "Pallava Architecture",
+    description: "A collection of 7th- and 8th-century religious monuments, known for their rathas (temples in the form of chariots), mandapas (cave sanctuaries), and giant open-air reliefs.",
+    historicalContext: "A major seaport of the Pallava kingdom, these monuments represent the early stages of Dravidian architecture.",
+    artisticCharacteristics: [
+      "Monolithic rock-cut shrines",
+      "Colossal bas-reliefs",
+      "Depiction of mythological stories (e.g., Descent of the Ganges)",
+      "Shore temples"
+    ],
+    artists: ["Pallava artisans"],
+    artworks: ["Descent of the Ganges (Arjuna's Penance)", "Shore Temple", "Pancha Rathas"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Shore_Temple%2C_Mahabalipuram.jpg/800px-Shore_Temple%2C_Mahabalipuram.jpg"],
+    relatedLocations: ["thanjavur", "ellora"]
+  },
+  {
+    id: "thanjavur",
+    name: "Thanjavur",
+    state: "Tamil Nadu",
+    coordinates: [10.7870, 79.1378],
+    period: "11th century CE onwards",
+    category: "Classical",
+    movement: "Chola Art and Tanjore Painting",
+    description: "Home to the Brihadisvara Temple, Thanjavur is the zenith of Chola architecture and bronze casting, and later the birthplace of the distinctive Tanjore painting style.",
+    historicalContext: "Capital of the Chola Empire, a period of immense cultural and artistic achievement in South India, later patronized by Nayakas and Marathas.",
+    artisticCharacteristics: [
+      "Monumental Dravidian temple architecture",
+      "Lost-wax bronze casting (Nataraja)",
+      "Tanjore paintings with gold foil and semi-precious stones",
+      "Rich frescoes"
+    ],
+    artists: ["Chola bronze casters", "Maratha period painters"],
+    artworks: ["Brihadisvara Temple", "Chola Bronze Nataraja"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Brihadeeswarar_Temple_at_Thanjavur.jpg/800px-Brihadeeswarar_Temple_at_Thanjavur.jpg"],
+    relatedLocations: ["mahabalipuram", "chennai"]
+  },
+  {
+    id: "konark",
+    name: "Konark Sun Temple",
+    state: "Odisha",
+    coordinates: [19.8876, 86.0945],
+    period: "13th century CE",
+    category: "Classical",
+    movement: "Kalinga Architecture",
+    description: "Designed in the shape of a colossal chariot for the Sun God Surya, with immense carved stone wheels, pillars, and walls.",
+    historicalContext: "Built by King Narasimhadeva I of the Eastern Ganga Dynasty, it represents the climax of Kalinga architecture.",
+    artisticCharacteristics: [
+      "Temple as a monumental chariot",
+      "Intricate carvings of flora, fauna, and geometric patterns",
+      "Erotic sculptures and mithuna figures",
+      "Chlorite statues of the Sun God"
+    ],
+    artists: ["Eastern Ganga artisans"],
+    artworks: ["Stone Wheels of Konark", "War Horses", "Surya sculptures"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Konarka_Temple.jpg/800px-Konarka_Temple.jpg"],
+    relatedLocations: ["puri", "raghurajpur", "khajuraho"]
+  },
+  {
+    id: "puri",
+    name: "Puri",
+    state: "Odisha",
+    coordinates: [19.8135, 85.8312],
+    period: "12th century CE onwards",
+    category: "Classical",
+    movement: "Kalinga Architecture & Pattachitra",
+    description: "Centered around the Jagannath Temple, Puri is a hub of traditional Odia culture and religious art, deeply connected to the Pattachitra painting tradition.",
+    historicalContext: "The cult of Jagannath has heavily influenced the visual arts, crafts, and literature of Odisha for centuries.",
+    artisticCharacteristics: [
+      "Iconography of Jagannath, Balabhadra, and Subhadra",
+      "Vibrant Pattachitra cloth paintings",
+      "Applique work (Pipili)",
+      "Monumental wooden chariots (Ratha Yatra)"
+    ],
+    artists: ["Chitrakar communities"],
+    artworks: ["Jagannath Temple", "Traditional Pattachitras"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Jagannath_Temple_Puri.jpg/800px-Jagannath_Temple_Puri.jpg"],
+    relatedLocations: ["konark", "raghurajpur"]
+  },
+  {
+    id: "delhi",
+    name: "Delhi",
+    state: "Delhi",
+    coordinates: [28.6139, 77.2090],
+    period: "12th – 19th century CE",
+    category: "Mughal",
+    movement: "Indo-Islamic Architecture & Miniature Painting",
+    description: "A continuously inhabited historic city that served as the capital for the Delhi Sultanate and Mughal Empire, shaping Indo-Islamic art and architecture.",
+    historicalContext: "Saw the synthesis of Persian, Central Asian, and indigenous Indian artistic traditions, leading to a unique architectural and painting vocabulary.",
+    artisticCharacteristics: [
+      "Use of red sandstone and white marble",
+      "Domes, arches, and minarets",
+      "Intricate pietra dura inlay work",
+      "Mughal miniature painting (court scenes, natural history)"
+    ],
+    artists: ["Ustad Ahmad Lahori", "Mansur", "Abul Hasan"],
+    artworks: ["Humayun's Tomb", "Red Fort", "Jama Masjid"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Humayun%27s_Tomb_Delhi_India.jpg/800px-Humayun%27s_Tomb_Delhi_India.jpg"],
+    relatedLocations: ["agra", "fatehpur-sikri", "jaipur"]
+  },
+  {
+    id: "agra",
+    name: "Agra",
+    state: "Uttar Pradesh",
+    coordinates: [27.1767, 78.0081],
+    period: "16th – 17th century CE",
+    category: "Mughal",
+    movement: "Mughal Architecture",
+    description: "The capital of the Mughal Empire for much of the 16th and 17th centuries, home to the pinnacle of Mughal architecture, the Taj Mahal.",
+    historicalContext: "Under Akbar, Jahangir, and Shah Jahan, Agra became a global center of art, culture, and learning, blending Islamic geometric precision with Indian craftsmanship.",
+    artisticCharacteristics: [
+      "Monumental mausoleums",
+      "Extensive use of white marble",
+      "Pietra dura (parchin kari) floral inlays",
+      "Symmetrical Charbagh gardens"
+    ],
+    artists: ["Ustad Ahmad Lahori", "Shah Jahan's royal workshops"],
+    artworks: ["Taj Mahal", "Agra Fort", "Tomb of I'timad-ud-Daulah"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Taj-Mahal.jpg/800px-Taj-Mahal.jpg"],
+    relatedLocations: ["delhi", "fatehpur-sikri"]
+  },
+  {
+    id: "fatehpur-sikri",
+    name: "Fatehpur Sikri",
+    state: "Uttar Pradesh",
+    coordinates: [27.0945, 77.6679],
+    period: "Late 16th century CE",
+    category: "Mughal",
+    movement: "Early Mughal Architecture",
+    description: "A short-lived capital of the Mughal Empire built by Emperor Akbar, showcasing a unique blend of Timurid and regional Indian architectural styles.",
+    historicalContext: "Built to honor the Sufi saint Salim Chishti. It reflects Akbar's syncretic philosophy and his interest in diverse cultural traditions.",
+    artisticCharacteristics: [
+      "Predominant use of red sandstone",
+      "Synthesis of Hindu and Islamic architectural elements",
+      "Intricate jali (lattice) screens",
+      "Monumental gateways (Buland Darwaza)"
+    ],
+    artists: ["Akbar's royal architects"],
+    artworks: ["Buland Darwaza", "Tomb of Salim Chishti", "Panch Mahal"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Buland_Darwaza_Fatehpur_Sikri.jpg/800px-Buland_Darwaza_Fatehpur_Sikri.jpg"],
+    relatedLocations: ["agra", "delhi"]
+  },
+  {
+    id: "jaipur",
+    name: "Jaipur",
+    state: "Rajasthan",
+    coordinates: [26.9124, 75.7873],
+    period: "18th century CE onwards",
+    category: "Mughal", // Though Rajput, it falls under medieval/Mughal era in categorization
+    movement: "Rajput Miniature Painting & Architecture",
+    description: "The 'Pink City' is a masterclass in pre-modern urban planning and a major center for Rajput miniature painting and decorative arts.",
+    historicalContext: "Founded by Jai Singh II in 1727, Jaipur became a haven for artisans and artists, patronizing styles that blended Mughal sophistication with bold Rajput aesthetics.",
+    artisticCharacteristics: [
+      "Grid-based city planning (Vidyadhar Bhattacharya)",
+      "Vibrant frescoes and block printing",
+      "Jaipur school of miniature painting (bold colors, divine themes)",
+      "Gemstone carving and enamel work (Meenakari)"
+    ],
+    artists: ["Sahibdin (Mewar, early influence)", "Nihal Chand (Kishangarh influence)"],
+    artworks: ["Hawa Mahal", "Amer Fort", "City Palace", "Gita Govinda manuscripts"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hawa_Mahal_2011.jpg/800px-Hawa_Mahal_2011.jpg"],
+    relatedLocations: ["udaipur", "delhi", "agra"]
+  },
+  {
+    id: "udaipur",
+    name: "Udaipur",
+    state: "Rajasthan",
+    coordinates: [24.5854, 73.7125],
+    period: "16th century CE onwards",
+    category: "Mughal", // Rajput Court Art
+    movement: "Mewar Miniature Painting",
+    description: "Capital of the Mewar kingdom, famous for its lakes, palaces, and a distinctive, conservative style of Rajput miniature painting that resisted early Mughal influence.",
+    historicalContext: "The Sisodia Rajputs of Mewar maintained strong independence, which was reflected in their art, emphasizing Hindu mythological narratives and emotional intensity.",
+    artisticCharacteristics: [
+      "Vivid, primary colors (reds, yellows, blues)",
+      "Flat backgrounds without Mughal spatial depth",
+      "Prominent lotus eyes",
+      "Narrative series (Rasikapriya, Ramayana)"
+    ],
+    artists: ["Sahibdin", "Manohar"],
+    artworks: ["Jagat Shiromani Temple", "City Palace", "Mewar Ramayana"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/City_Palace%2C_Udaipur.jpg/800px-City_Palace%2C_Udaipur.jpg"],
+    relatedLocations: ["jaipur"]
+  },
+  {
+    id: "lucknow",
+    name: "Lucknow",
+    state: "Uttar Pradesh",
+    coordinates: [26.8467, 80.9462],
+    period: "18th – 19th century CE",
+    category: "Mughal",
+    movement: "Awadhi Art and Architecture",
+    description: "The center of Nawabi culture, known for its syncretic architecture, poetry, classical music, and fine crafts like Chikankari embroidery.",
+    historicalContext: "As the Mughal Empire declined, the Nawabs of Awadh created a lavish court culture, patronizing artists who migrated from Delhi.",
+    artisticCharacteristics: [
+      "Stucco architecture with European influences (Indo-European)",
+      "Intricate Chikankari white-work embroidery",
+      "Company school painting influence later on",
+      "Elaborate Imambaras"
+    ],
+    artists: ["Nawabi court artisans", "Tilly Kettle (European influence)"],
+    artworks: ["Bara Imambara", "Rumi Darwaza", "Chhatar Manzil"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Bara_Imambara_Lucknow.jpg/800px-Bara_Imambara_Lucknow.jpg"],
+    relatedLocations: ["delhi", "agra"]
+  },
+  {
+    id: "madhubani",
+    name: "Madhubani",
+    state: "Bihar",
+    coordinates: [26.3495, 86.0805],
+    period: "Ancient to Contemporary",
+    category: "Folk & Tribal",
+    movement: "Mithila Painting",
+    description: "Originating in the Mithila region, this is a vibrant folk painting tradition traditionally done by women on freshly plastered mud walls and floors.",
+    historicalContext: "Rooted in ritualistic practices and local mythology (like the Ramayana), the art gained global recognition in the 20th century when transferred to paper.",
+    artisticCharacteristics: [
+      "Complex geometric patterns",
+      "No empty spaces (horror vacui)",
+      "Natural dyes and pigments",
+      "Themes of nature, deities (Krishna, Rama, Shiva), and weddings"
+    ],
+    artists: ["Sita Devi", "Ganga Devi", "Bharti Dayal"],
+    artworks: ["Kohbar ghar (nuptial chamber) murals", "Tree of Life motifs"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Madhubani_painting.jpg/800px-Madhubani_painting.jpg"],
+    relatedLocations: ["kolkata"]
+  },
+  {
+    id: "raghurajpur",
+    name: "Raghurajpur",
+    state: "Odisha",
+    coordinates: [19.8824, 85.8077],
+    period: "12th century CE to Contemporary",
+    category: "Folk & Tribal",
+    movement: "Pattachitra & Gotipua",
+    description: "A heritage crafts village where almost every family is engaged in traditional arts, primarily Pattachitra painting and palm leaf engraving.",
+    historicalContext: "The art here is intrinsically linked to the Jagannath Temple in Puri, traditionally providing the temple with painted artifacts for rituals.",
+    artisticCharacteristics: [
+      "Cloth-based scroll painting (Pattachitra)",
+      "Fine line work and intricate borders",
+      "Natural stone and earth colors",
+      "Tala Pattachitra (palm leaf engraving)"
+    ],
+    artists: ["Jagannath Mahapatra", "Traditional Chitrakar families"],
+    artworks: ["Dasavatara Pattachitra", "Palm leaf manuscripts"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Pattachitra_painting.jpg/800px-Pattachitra_painting.jpg"],
+    relatedLocations: ["puri", "konark"]
+  },
+  {
+    id: "kalighat",
+    name: "Kolkata (Kalighat)",
+    state: "West Bengal",
+    coordinates: [22.5226, 88.3477],
+    period: "19th century CE",
+    category: "Colonial",
+    movement: "Kalighat Painting",
+    description: "Originating around the Kalighat Kali Temple, these paintings were sold to visitors. They evolved from religious depictions to satirical commentary on colonial society.",
+    historicalContext: "Represented a shift from rural folk art to urban popular art in colonial Calcutta, responding rapidly to social changes.",
+    artisticCharacteristics: [
+      "Swift, sweeping brushstrokes",
+      "Voluminous figures with shaded contours",
+      "Watercolors on mill-made paper",
+      "Depiction of 'babus', 'bibis', and contemporary scandals"
+    ],
+    artists: ["Patua community of Kalighat"],
+    artworks: ["Shiva as Panchanan", "Elokeshi scandal series"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Shiva_Panchanana.jpg/800px-Shiva_Panchanana.jpg"],
+    relatedLocations: ["kolkata-bengal-school", "shantiniketan"]
+  },
+  {
+    id: "bastar",
+    name: "Bastar",
+    state: "Chhattisgarh",
+    coordinates: [19.1071, 81.9535],
+    period: "Prehistoric roots to Contemporary",
+    category: "Folk & Tribal",
+    movement: "Dhokra & Tribal Art",
+    description: "A heavily forested region home to numerous indigenous tribes known for their unique metalcraft (Dhokra), wood carving, and terracotta arts.",
+    historicalContext: "The art of Bastar is deeply intertwined with tribal animistic beliefs, rituals, and the everyday life of communities like the Muria, Maria, and Halba.",
+    artisticCharacteristics: [
+      "Dhokra (lost-wax metal casting using brass/bell metal)",
+      "Slender, stylized elongated figures",
+      "Tribal motifs, nature deities, and animals",
+      "Wrought iron craft"
+    ],
+    artists: ["Ghadwa and Jhara tribal artisans"],
+    artworks: ["Mata Danteshwari figures", "Tribal horse/elephant riders"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Dhokra_Art.jpg/800px-Dhokra_Art.jpg"],
+    relatedLocations: ["gond-region"]
+  },
+  {
+    id: "kutch",
+    name: "Kutch",
+    state: "Gujarat",
+    coordinates: [23.7337, 69.8597],
+    period: "Ancient to Contemporary",
+    category: "Folk & Tribal",
+    movement: "Textile Arts & Lippan",
+    description: "A vibrant desert region famous for its diverse textile traditions, embroidery, block printing, and Lippan (mud and mirror work) art.",
+    historicalContext: "Located on ancient trade routes, Kutch absorbed influences from Sindh, Persia, and beyond, resulting in a rich tapestry of community-specific craft traditions.",
+    artisticCharacteristics: [
+      "Ajrakh block printing (geometric patterns, natural dyes)",
+      "Intricate mirror-work embroidery (Rabari, Ahir)",
+      "Lippan Kaam (mud relief with mirrors on walls)",
+      "Rogan art"
+    ],
+    artists: ["Khatri community (Ajrakh)", "Rabari women (embroidery)"],
+    artworks: ["Ajrakh shawls", "Lippan wall murals", "Banni embroidery"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Embroidery_from_Kutch.jpg/800px-Embroidery_from_Kutch.jpg"],
+    relatedLocations: ["baroda"]
+  },
+  {
+    id: "warli",
+    name: "Warli Region",
+    state: "Maharashtra",
+    coordinates: [19.9806, 72.7766],
+    period: "10th century CE onwards (discovered in 1970s)",
+    category: "Folk & Tribal",
+    movement: "Warli Painting",
+    description: "A tribal art mostly created by the Warli people on the mud walls of their huts, depicting their social life, agriculture, and festivals rather than mythological deities.",
+    historicalContext: "While the tradition is ancient, it was popularized on paper and canvas in the 1970s by artists like Jivya Soma Mashe.",
+    artisticCharacteristics: [
+      "White pigment (rice paste) on a mud/cow dung background",
+      "Basic geometric shapes (circle, triangle, square)",
+      "Tarpa dance circular formations",
+      "Minimalist and rhythmic compositions"
+    ],
+    artists: ["Jivya Soma Mashe", "Warli women"],
+    artworks: ["Tarpa Dance scenes", "Palaghata (marriage god) murals"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Warli_Painting_Maharashtra.jpg/800px-Warli_Painting_Maharashtra.jpg"],
+    relatedLocations: ["ajanta", "mumbai"]
+  },
+  {
+    id: "gond",
+    name: "Gond Region",
+    state: "Madhya Pradesh",
+    coordinates: [22.7533, 79.7342],
+    period: "Contemporary (Roots in ancient folklore)",
+    category: "Folk & Tribal",
+    movement: "Gond Art",
+    description: "A vibrant visual expression of the Gond tribe, characterized by the use of intricate dots and dashes to create complex, colorful forms of flora and fauna.",
+    historicalContext: "Originally painted on mud walls during festivals, Gond art transitioned to paper and canvas in the late 20th century under artists like Jangarh Singh Shyam.",
+    artisticCharacteristics: [
+      "Vibrant colors and imaginative, surreal compositions",
+      "Signature patterns of dots, lines, and dashes filling shapes",
+      "Animistic themes, interconnectedness of life",
+      "Depictions of local deities and trees of life"
+    ],
+    artists: ["Jangarh Singh Shyam", "Bhajju Shyam", "Venkat Shyam"],
+    artworks: ["The London Jungle Book (illustrations)", "Gond Tree of Life"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Gond_painting.jpg/800px-Gond_painting.jpg"],
+    relatedLocations: ["bhimbetka", "bastar"]
+  },
+  {
+    id: "kolkata-bengal-school",
+    name: "Kolkata (Bengal School)",
+    state: "West Bengal",
+    coordinates: [22.5726, 88.3639],
+    period: "Early 20th century CE",
+    category: "Colonial",
+    movement: "Bengal School of Art",
+    description: "An avant-garde and nationalist movement that reacted against Western academic art styles promoted by British art schools in India.",
+    historicalContext: "Led by Abanindranath Tagore, it sought to establish a distinct Indian artistic identity by looking back to Mughal, Rajput, and Ajanta traditions, alongside Pan-Asian influences.",
+    artisticCharacteristics: [
+      "Wash technique (Japanese influence)",
+      "Muted, atmospheric color palettes",
+      "Spiritual, historical, and mythological subjects",
+      "Rejection of Western realism in favor of lyrical lines"
+    ],
+    artists: ["Abanindranath Tagore", "Gaganendranath Tagore", "Asit Kumar Haldar"],
+    artworks: ["Bharat Mata", "Passing of Shah Jahan"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bharat_Mata_by_Abanindranath_Tagore.jpg/800px-Bharat_Mata_by_Abanindranath_Tagore.jpg"],
+    relatedLocations: ["shantiniketan", "kalighat"]
+  },
+  {
+    id: "shantiniketan",
+    name: "Shantiniketan",
+    state: "West Bengal",
+    coordinates: [23.6820, 87.6749],
+    period: "1920s onwards",
+    category: "Modern",
+    movement: "Contextual Modernism",
+    description: "Home to Visva-Bharati University and Kala Bhavana, an influential art school that pioneered a unique pedagogy integrating art with nature and daily life.",
+    historicalContext: "Founded by Rabindranath Tagore, it became a melting pot for international and Indian ideas, moving beyond the nationalist Bengal School into a broader modernism.",
+    artisticCharacteristics: [
+      "Monumental public murals and sculptures",
+      "Integration of folk and classical elements",
+      "Emphasis on rural subjects and working class",
+      "Graphic arts and printmaking"
+    ],
+    artists: ["Nandalal Bose", "Benode Behari Mukherjee", "Ramkinkar Baij", "Rabindranath Tagore"],
+    artworks: ["Santhal Family (sculpture)", "Medieval Saints (mural)"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Santhal_family.jpg/800px-Santhal_family.jpg"],
+    relatedLocations: ["kolkata-bengal-school"]
+  },
+  {
+    id: "mumbai",
+    name: "Mumbai",
+    state: "Maharashtra",
+    coordinates: [18.9220, 72.8347],
+    period: "1940s onwards",
+    category: "Modern",
+    movement: "Progressive Artists' Group",
+    description: "The birthplace of the Progressive Artists' Group (PAG) in 1947, which sought to break away from both the Bengal School and British academic art to create a new, post-independence Indian modernism.",
+    historicalContext: "Formed in the aftermath of Indian independence and partition, the PAG was highly influential in defining the trajectory of contemporary Indian art.",
+    artisticCharacteristics: [
+      "Synthesis of European modernism (Cubism, Expressionism) with Indian themes",
+      "Bold colors and strong lines",
+      "Diverse individual styles rather than a unified aesthetic",
+      "Focus on urban and existential themes"
+    ],
+    artists: ["F.N. Souza", "M.F. Husain", "S.H. Raza", "Tyeb Mehta", "V.S. Gaitonde"],
+    artworks: ["Bindu (Raza)", "Horses (Husain)", "Birth (Souza)"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Gateway_of_India%2C_Mumbai.jpg/800px-Gateway_of_India%2C_Mumbai.jpg"],
+    relatedLocations: ["baroda", "chennai"]
+  },
+  {
+    id: "chennai",
+    name: "Chennai",
+    state: "Tamil Nadu",
+    coordinates: [13.0827, 80.2707],
+    period: "1960s onwards",
+    category: "Modern",
+    movement: "Madras Art Movement",
+    description: "Centered around the Government College of Fine Arts, Chennai, and the Cholamandal Artists' Village, this movement sought a regional modernism rooted in South Indian traditions.",
+    historicalContext: "Spearheaded by K.C.S. Paniker, artists looked towards regional folk arts, crafts, and philosophical concepts to create a distinct visual language.",
+    artisticCharacteristics: [
+      "Use of linear elements, script, and calligraphy",
+      "Tantric and geometric symbolism",
+      "Integration of craft techniques in fine art",
+      "Earthy color palettes"
+    ],
+    artists: ["K.C.S. Paniker", "J. Swaminathan", "K.V. Haridasan"],
+    artworks: ["Words and Symbols series"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cholamandal_Artists%27_Village.jpg/800px-Cholamandal_Artists%27_Village.jpg"],
+    relatedLocations: ["thanjavur", "mumbai"]
+  },
+  {
+    id: "baroda",
+    name: "Baroda",
+    state: "Gujarat",
+    coordinates: [22.3072, 73.1812],
+    period: "1950s onwards",
+    category: "Contemporary",
+    movement: "Baroda School / Narrative Figuration",
+    description: "The Faculty of Fine Arts at MS University became a major center for contemporary art, shifting the focus towards narrative figuration, pop culture, and social realities.",
+    historicalContext: "In the 1970s and 80s, artists in Baroda reacted against the abstraction of earlier modernists, bringing back the human figure and storytelling.",
+    artisticCharacteristics: [
+      "Narrative and figurative focus",
+      "Commentary on urban life, politics, and middle-class existence",
+      "Use of popular culture and kitsch imagery",
+      "Innovative use of printmaking and ceramics"
+    ],
+    artists: ["Bhupen Khakhar", "Gulammohammed Sheikh", "Nilima Sheikh", "K.G. Subramanyan"],
+    artworks: ["You Can't Please All (Khakhar)", "City for Sale (Sheikh)"],
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Laxmi_Vilas_Palace_Vadodara.jpg/800px-Laxmi_Vilas_Palace_Vadodara.jpg"],
+    relatedLocations: ["mumbai", "shantiniketan"]
+  }
+];
